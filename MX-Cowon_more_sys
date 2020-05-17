@@ -31,7 +31,7 @@ own_window_hints undecorated,below,skip_taskbar,skip_pager
 #own_window_argb_value 100
 
 alignment bottom_left
-gap_x 60
+gap_x 20
 gap_y 0
 minimum_size 140 140
 
@@ -45,7 +45,7 @@ draw_shades no
 
 default_color EF5A29
 default_shade_color 1d1d1d
-color0 888888
+color0 C0C0C0 
 color1 0f0c03
 color2 77B753
 color3 1c1911
@@ -55,7 +55,7 @@ own_window_argb_value 0
 own_window_argb_visual yes
 own_window_colour 000000
 TEXT
-${voffset 150}
+${voffset 120}
 ${if_match "pmfix${time %p}" == "pmfix"}${time %H}${else}${time %H}${endif}
-${color2}${voffset -170}${offset 100}${time %M}${color}
+${color2}${voffset -150}${offset 80}${time %M}${color}
 ${color0}${offset 30}${voffset -250}${font Droid Sans:size=16}${time %A} ${time %B %d, %Y}${color}
